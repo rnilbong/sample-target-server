@@ -1,6 +1,6 @@
 # sample-target-server
 
-This server is lophorina's sample target api endpoint.
+This api server is lophorina's target endpoint.
 
 ## endpoint
 
