@@ -15,6 +15,12 @@ public class SampleRestController {
         return Arrays.asList("1", "2", "3");
     }
 
+    @GetMapping("/param")
+    public String getSampleString(@RequestParam("id") String id, @RequestParam("pw") String pw) {
+        System.out.println(id + "/" + pw);
+        return id + "/" + pw;
+    }
+
     @PostMapping
     public void postSampleString(@RequestBody List<String> requests) {
         System.out.println(requests);
