@@ -23,6 +23,11 @@ public class SampleRestController {
 
     @PostMapping
     public void postSampleString(@RequestBody List<String> requests) {
-        System.out.println(requests);
+        requests.forEach(System.out::println);
+    }
+
+    @PostMapping("/member")
+    public void postSampleString(@RequestBody Member member) {
+        System.out.println(member.toString());
     }
 }
