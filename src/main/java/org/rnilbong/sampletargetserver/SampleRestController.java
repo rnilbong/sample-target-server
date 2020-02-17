@@ -12,6 +12,7 @@ public class SampleRestController {
 
     @GetMapping()
     public List<String> getSampleString() {
+        System.out.println("call sample!!!!");
         return Arrays.asList("1", "2", "3");
     }
 
